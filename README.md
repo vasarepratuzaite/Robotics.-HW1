@@ -1,6 +1,6 @@
 # VU MIF ROBOTICS HOMEWORK NR. 1
 
-## GOLD
+## MAIN GOLD
 This project demonstrates a smart temperature monitoring system built with Arduino Uno.
 It continuously measures ambient temperature using a TMP sensor and displays the results in Celsius and Fahrenheit on a 16x2 LCD screen.
 The system includes LED warning that activate when the temperature exceeds a defined limit, and it calculates a 10-second average temperature for more stable readings.
@@ -23,7 +23,6 @@ The system includes LED warning that activate when the temperature exceeds a def
 | **Potentiometer** | 1 | Adjusts LCD contrast |
 | **Buzzer** | 1 | Audible over-temperature alert |
 | **LED + Resistor** | 1 | Visual over-temperature alert |
-| **Jumper wires** | ~10–15 | Electrical connections |
 | **Breadboard** | 1 | Prototyping base |
 
 ## PHOTO
