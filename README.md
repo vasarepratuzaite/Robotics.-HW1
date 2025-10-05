@@ -8,7 +8,7 @@ The system includes LED warning that activate when the temperature exceeds a def
 ## FEATURES 
 - Real-time temperature measurement in °C and °F.
 - LCD display shows current, average, and elapsed time.
-- Audible and visual alert (buzzer + LED) when temperature exceeds the threshold.
+- Audible and visual alert (LED) when temperature exceeds the threshold.
 - 10-second average temperature calculation using millis() for precise timing.
 - Custom degree symbol (°) displayed on LCD.
 - Real-time logging to Serial Monitor for debugging and data tracking.
@@ -21,19 +21,15 @@ The system includes LED warning that activate when the temperature exceeds a def
 | **TMP36 Temperature Sensor** | 1 | Reads ambient temperature |
 | **16x2 LCD Display** | 1 | Displays readings and system status |
 | **Potentiometer** | 1 | Adjusts LCD contrast |
-| **Buzzer** | 1 | Audible over-temperature alert |
 | **LED + Resistor** | 1 | Visual over-temperature alert |
 | **Breadboard** | 1 | Prototyping base |
 
 ## PHOTO
 <img width="762" height="672" alt="Screenshot 2025-10-05 at 20 32 13" src="https://github.com/user-attachments/assets/ac97a7d8-017f-45dd-9464-7ed1e0c63745" />
 
-
 ## DEMO VIDEO
 
 [Click here to watch the demo video](https://github.com/vasarepratuzaite/Robotics.-HW1/blob/main/demo.mp4)
-
-
 
 ## SYSTEM OVERVIEW
 1. On startup, the LCD displays "Smart Thermometer - Starting..." for 4 seconds.
