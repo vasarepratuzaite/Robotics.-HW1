@@ -36,7 +36,7 @@ The system includes LED warning that activate when the temperature exceeds a def
 
 
 
-## 
+## SYSTEM OVERVIEW
 1. On startup, the LCD displays "Smart Thermometer - Starting..." for 4 seconds.
 2. The TMP36 sensor continuously measures the ambient temperature.
 3. Every second, the display updates with:
@@ -46,6 +46,24 @@ The system includes LED warning that activate when the temperature exceeds a def
 4. If the temperature exceeds 30°C, the LED activates as an alert.
 5. The system also tracks minimum and maximum recorded temperatures.
 6. Temperature data is printed to the Serial Monitor for additional analysis
+
+## ARDUINO CODE HIGHLIGHTS 
+- Uses the LiquidCrystal library for LCD control.
+- Implements timing logic using millis() instead of delay() for averaging.
+- Custom degree symbol created with lcd.createChar().
+- Organized, commented, and easy-to-modify code.
+
+## CIRCUIT OVERVIEW 
+- TMP36 sensor connected to analog pin A0.
+- LCD display connected to digital pins 8, 7, 6, 5, 4, 3.
+- LED connected to digital pin 10 (with resistor).
+- Potentiometer used to control LCD contrast between 5V and GND.
+
+## FUTURE IMPROVEMENTS
+- Allow temperature limit adjustment using buttons or a potentiometer.
+- Add LCD backlight control based on ambient light sensor.
+
+
 
    
 
