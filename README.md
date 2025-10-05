@@ -31,7 +31,7 @@ The system includes LED warning that activate when the temperature exceeds a def
 
 ## DEMO VIDEO
 
-[Click here to watch the demo video](..)
+[Click here to watch the demo video](https://github.com/vasarepratuzaite/Robotics.-HW1/blob/main/demo.mp4)
 
 
 
