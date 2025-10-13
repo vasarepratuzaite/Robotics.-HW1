@@ -32,15 +32,8 @@ The system includes LED warning that activate when the temperature exceeds a def
 [Click here to watch the demo video](https://github.com/vasarepratuzaite/Robotics.-HW1/blob/main/demo.mp4)
 
 ## SYSTEM OVERVIEW
-1. On startup, the LCD displays "Smart Thermometer - Starting..." for 4 seconds.
-2. The TMP36 sensor continuously measures the ambient temperature.
-3. Every second, the display updates with:
-      - Current temperature (°C and °F).
-      - Elapsed time since startup.
-      - Latest 10-second average temperature.
-4. If the temperature exceeds 30°C, the LED activates as an alert.
-5. The system also tracks minimum and maximum recorded temperatures.
-6. Temperature data is printed to the Serial Monitor for additional analysis
+When the device starts, the Serial Monitor welcomes the user with the title “Reaction Time Tester” and automatically retrieves the best previous score stored in EEPROM memory. To begin the test, the user presses the button once. After that, the Arduino waits for a random time interval between one and five seconds before turning the LED ON. As soon as the LED lights up, the internal timer starts counting. The user must react quickly and press the button as fast as possible. The system then stops the timer and displays the user’s reaction time in milliseconds on the Serial Monitor. If this new score beats the previously saved record, it immediately replaces the old one in EEPROM.
+The experiment can be repeated continuously, allowing the user to train and improve their reflex speed over time.
 
 ## ARDUINO CODE HIGHLIGHTS 
 - Uses the LiquidCrystal library for LCD control.
